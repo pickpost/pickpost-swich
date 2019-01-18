@@ -15,8 +15,6 @@ var firewormUrl = '';
 window.local = __LOCAL__;
 if (__LOCAL__) {
 	firewormUrl = '/dist/main.js';
-} else {
-	firewormUrl = 'https://a.test.alipay.net/g/fireworm/fireworm/0.0.1/main.js';
 }
 
 function needLoading() {
