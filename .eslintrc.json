@@ -1,0 +1,41 @@
+{
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "parser": "babel-eslint",
+    "globals": {
+        "__LOCAL__": true,
+        "WorkerGlobalScope": true,
+        "define": true,
+        "BizLog": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "module",
+        "ecmaFeatures": {
+          "jsx": true,
+          "experimentalObjectRestSpread": true
+        }
+      },
+    "rules": {
+        "no-useless-escape": "off",
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "no-fallthrough": "off",
+        "no-empty":"off",
+        "linebreak-style": "off",
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    }
+}
