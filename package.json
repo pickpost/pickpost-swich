@@ -1,6 +1,7 @@
 {
   "name": "pickpost-switch",
   "version": "0.0.1",
+  "author": "ChrisGao",
   "description": "development tools",
   "main": "dist/main.js",
   "scripts": {

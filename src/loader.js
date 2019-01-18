@@ -3,10 +3,10 @@
  * 当 url 中开关开启时，额外加载 fireworm，重写请求。
  * 
  * 开关开启方式：
- * 1. 通过url传参 __fireworm=true
+ * 1. 通过url传参 __switch=true
  * 
  * 开关关闭方式：
- * 1. 通过url传参 __fireworm=false
+ * 1. 通过url传参 __switch=false
  * 2. 如果开关开启，后续页面上显示一个小浮标，点击可以关闭 Mock 开关。
  */
 var firewormUrl = '';
@@ -20,13 +20,7 @@ if (__LOCAL__) {
 }
 
 function needLoading() {
-	if (/([a-zA-Z0-9]?\.)?\.net/.test(location.host)) {
-		return true;
-	}  
-	if (/render-pre/.test(location.host)) {
-		return true;
-	}
-	if (/[\?&]__fireworm=true/.test(location.href)) {
+	if (/[\?&]__switch=true/.test(location.href)) {
 		return true;
 	}
 	return false;

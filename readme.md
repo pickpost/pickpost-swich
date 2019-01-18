@@ -1,4 +1,4 @@
-## Fireworm
+## PickPost-Switch
 
 ### 接入方式
 
@@ -12,8 +12,4 @@
 
 ### 使用说明
 开启方式：
-现Fireworm默认在使用KOBE的以下情况下显示:
-
-    1. XX.net域名
-    2. render-pre开头域名
-    3. 查询参数添加__fireworm=true
+    1. 查询参数添加__switch=true

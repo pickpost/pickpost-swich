@@ -1,7 +1,7 @@
 import Fireworm from './fireworm';
 
 window.fireworm = new Fireworm({
-	defaultPlugins: ['info', 'log', 'network', 'toolKit', 'element', 'storage'], // 可以在此设定要默认加载的面板
+	defaultPlugins: ['network'], // 可以在此设定要默认加载的面板
 	maxLogNumber: 1000,
 	// disableLogScrolling: true,
 	onReady: function() {
